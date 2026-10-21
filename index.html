@@ -1,12 +1,105 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
-<link rel="stylesheet" href="styles.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Titel der Seite</title>
+    <title>CookieKlicker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Click the cookie!</h1>
+
+    <div id="scoreboard">
+      <p>Cookies: <span id="score">1280</span></p>
+      <p>Highscore: <span id="highscore">5400</span></p>
+    </div>
+
+    <button id="cookie-button"><img src="cookie.jpg" alt="Cookie" /></button>
+
+    <div id="shop">
+      <h2>Shop</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Buy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Wood-Fired Oven <small>+1 / sec</small></td>
+            <td>50</td>
+            <td><button>Buy</button></td>
+          </tr>
+          <tr>
+            <td>Brick Oven <small>+5 / sec</small></td>
+            <td>100</td>
+            <td><button>Buy</button></td>
+          </tr>
+          <tr>
+            <td>Convection Turbo Oven <small>+20 / sec</small></td>
+            <td>500</td>
+            <td><button>Buy</button></td>
+          </tr>
+          <tr>
+            <td>Industrial Rotary Oven <small>+100 / sec</small></td>
+            <td>2000</td>
+            <td><button>Buy</button></td>
+          </tr>
+          <tr>
+            <td>Tunnel Oven <small>+500 / sec</small></td>
+            <td>10000</td>
+            <td><button>Buy</button></td>
+          </tr>
+          <tr>
+            <td>Cookie Factory <small>+2000 / sec</small></td>
+            <td>50000</td>
+            <td><button>Buy</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <section id="highscores">
+      <h2>Highscores</h2>
+      <form>
+        <label for="name">Your name:</label>
+        <input type="text" id="name" placeholder="Enter name" />
+        <button type="submit">Save score</button>
+      </form>
+      <table>
+        <tr><th>Rank</th><th>Name</th><th>Cookies</th></tr>
+        <tr><td>1</td><td>Anna</td><td>5400</td></tr>
+        <tr><td>2</td><td>Ben</td><td>3200</td></tr>
+        <tr><td>3</td><td>Mia</td><td>1900</td></tr>
+      </table>
+    </section>
+
+    <footer>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <p>© 2026 CookieKlicker</p>
+    </footer>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datenschutz - CookieKlicker</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <p>Text im Browserfenster</p>
+    <h1>Datenschutz</h1>
+
+    <p>
+      Diese Seite ist ein Studienprojekt. Es werden keine personenbezogenen
+      Daten gespeichert oder an Dritte weitergegeben.
+    </p>
+
+    <p><a href="index.html">Zurück zum Spiel</a></p>
   </body>
-</html>   
+</html>
