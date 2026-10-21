@@ -1,8 +1,154 @@
- p {
-     
-     color: rgb(14, 14, 14);
- 
+/*General seite */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 240, 220);
+  margin: 0;
+}
+
+h1 {
+  color: rgb(14, 14, 14);
   font-size: 5em;
   width: 70vw;
   background: rgb(233, 105, 233);
+}
+
+/* Scoreboard */
+#scoreboard {
+  font-size: 2em;
+}
+
+/*  Cookie  */
+#cookie-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+  float: left;
+}
+
+#cookie-button img {
+  display: block;
+  width: 40vw;
+  height: auto;
+  transition: transform 0.1s ease-out;
+}
+
+/* squish effect while the mouse button is pressed */
+#cookie-button:active img {
+  transform: scale(0.85);
+}
+
+/* pulse effect while the mouse is over the cookie */
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+#cookie-button:hover {
+  animation: pulse 0.8s ease-in-out infinite;
+}
+
+/*the shop*/
+#shop {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(233, 105, 233);
+  margin: 1em 1em 1em 2em;
+  padding: 0.5em;
+  font-size: 0.9em;
+}
+
+#shop h2 {
+  margin: 0.2em 0;
+}
+
+#shop table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  color: rgb(14, 14, 14);
+}
+
+#shop th,
+#shop td {
+  border: 1px solid rgb(14, 14, 14);
+  padding: 0.3em 0.5em;
+  text-align: center;
+}
+
+#shop th {
+  background-color: rgb(14, 14, 14);
+  color: white;
+}
+
+#shop td:first-child {
+  text-align: left;
+}
+
+#shop tbody tr:nth-child(even) {
+  background-color: rgb(252, 232, 252);
+}
+
+#shop tbody tr:hover {
+  background-color: rgb(245, 190, 245);
+}
+
+#shop small {
+  display: block;
+  color: gray;
+}
+
+#shop td button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(233, 105, 233);
+  font-size: 0.9em;
+  padding: 0.2em 0.8em;
+  cursor: pointer;
+}
+
+#shop td button:hover {
+  background-color: rgb(14, 14, 14);
+  color: white;
+}
+
+/*highscores, might add changes*/
+#highscores {
+  clear: both; /* moves it below the floating cookie */
+  margin: 2em;
+}
+
+#highscores form {
+  margin-bottom: 1em;
+}
+
+#highscores table {
+  border-collapse: collapse;
+}
+
+#highscores th,
+#highscores td {
+  border: 1px solid rgb(14, 14, 14);
+  padding: 0.5em;
+}
+
+/*footer*/
+footer {
+  clear: both;
+  background-color: rgb(181, 158, 224); /* lavender */
+  text-align: center;
+  padding: 1em;
+}
+
+footer a {
+  color: rgb(14, 14, 14);
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: white;
 }
